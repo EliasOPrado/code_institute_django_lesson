@@ -9,21 +9,23 @@
 <body>
     <h1>Things I need to do..</h1>
 <table>
-    <tr>
-        <td>
-            Plan Website
-        </td>
-    </tr>
-    <tr>
-        <td>
-           Create Website
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Launch Website
-        </td>
-    </tr>
+
+{% for item in items %}
+<tr>
+    {% if item.done %}
+    <td>
+      <strike>{{item.name}}</strike>
+    </td>
+    {% else %}
+    <td>
+        {{item.name}}
+      </td>
+    {% endif %}
+</tr>
+{% empty %}
+<p>You have nothing to do.</p>
+{% endfor %}
+
 </table>
 
 </body>
