@@ -12,3 +12,5 @@ class TestToDoItem(TestCase):
         form = ItemForm({'form': ''})
         self.assertFalse(form.is_valid())
         self.assertEqual(form.errors['name'], [u'This field is required.'])
+
+        
