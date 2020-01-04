@@ -26,7 +26,7 @@ SECRET_KEY = 'hu@*bt3$chlpnho648cy^%iwl&*1e7fyz@fm&l7)0!ux5bst)0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['',
+ALLOWED_HOSTS = ['127.0.0.1',
                 'simple-django-todoapp.herokuapp.com/']
 
 
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'todo',
-    'django_todo',
 ]
 
 MIDDLEWARE = [
