@@ -22,6 +22,6 @@ six==1.13.0
 sqlparse==0.3.0
 Strip==0.0.1.dev14
 stripe==2.42.0
-urllib3==1.25.8
+urllib3==1.26.5
 virtualenv==16.7.9
 wrapt==1.11.2
